@@ -1,0 +1,25 @@
+{
+	"TEST":"Prueba",
+	"LADY":"LADY CASTILLO",
+	"TYPE_OF_COURSE":"Tipo de curso",
+	"NAME_COURSE":"Nombre de curso",
+	"NAME_OF_SUBJECT":"Nombre materia",
+	"DURATION":"Duración",
+	"DESCRIPTION":"Descripción",
+	"INSTITUTION":"Institución",
+	"VIEW_SUBJECTS":"Ver materias",
+	"REGISTERED":"Registrado",
+	"OTHER":"Otro",
+	"COURSES":"Cursos",
+	"COURSE":"Curso",
+	"OPTION_1":"Opción 1",
+	"OPTION_2":"Opción 2",
+	"SUBJECTS":"materias",
+	"SUBJECT":"materia",
+	"BACK_BUTTON":"Volver",
+	"ADD_TITLE": "Añadir",
+	"ADD_COURSE": "Añadir curso",
+	"ADD_SUBJECT": "Añadir materia",
+	"CREDITS":"Creditos"
+
+}

@@ -1,0 +1,25 @@
+{
+	"TEST":"Lady's",
+	"LADY":"test",
+	"TYPE_OF_COURSE":"Type of course",
+	"NAME_COURSE":"Name course",
+	"NAME_OF_SUBJECT":"Name subject",
+	"DURATION":"Duration",
+	"DESCRIPTION":"Description",
+	"INSTITUTION":"Institution",
+	"VIEW_SUBJECTS":"View subjects",
+	"REGISTERED":"Registered",
+	"OTHER":"Other",
+	"COURSES":"Courses",
+	"COURSE":"Course",
+	"OPTION_1":"Option 1",
+	"OPTION_2":"Option 2",
+	"SUBJECTS":"subjects",
+	"SUBJECT":"subject",
+	"BACK_BUTTON":"Back",
+	"ADD_TITLE": "Add",
+	"ADD_COURSE": "Add course",
+	"ADD_SUBJECT": "Add subject",
+	"CREDITS":"Credits"
+
+}

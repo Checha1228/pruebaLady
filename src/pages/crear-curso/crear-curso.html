@@ -1,0 +1,99 @@
+<!--HEADER-->
+<ion-header class="cont-genr-header-app">
+ 	<header></header>
+</ion-header>
+
+<!--CONTENIDO-->
+<ion-content>
+	<ion-grid padding class="cont-gen-app-test">
+		<ion-row>
+			<!--TEXTINTRO-->
+			<ion-col col-12 class="cont-gen-text-intro">
+				<h2 class="title-app-default">
+					{{ 'TEST' | translate}}<br>
+					{{ 'LADY' | translate}}
+				</h2>
+				<p class="text-app-default">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam in, dolore accusantium omnis odio accusamus consequuntur excepturi aliquam quidem, unde eaque maiores. Harum facilis unde, consectetur quidem ab corporis eaque nisi recusandae explicabo porro quo nostrum quas sed? Maiores pariatur expedita officiis, ipsam sequi cum ea. Magni minus error optio amet numquam neque ipsa, dolor ea ullam maxime necessitatibus, voluptatum rerum? Rerum eligendi minus consectetur.
+				</p>
+			</ion-col>
+		</ion-row>
+
+		<ion-row>
+			<!--INFOCURSOS-->
+			<ion-col col-12 class="cont-gen-list-course">
+				<ion-item class="cont-default-forms">
+					<ion-label floating class="style-default-label">
+						{{ 'TYPE_OF_COURSE' | translate }}
+					</ion-label>
+					<ion-select class="style-default-input" (ionChange)="getCourses($event)">
+                        <ion-option *ngFor="let type of typeCourses" value="{{type.idTypeCourse}}" >{{type.NameTypeCourse}}</ion-option>
+                    </ion-select>
+				</ion-item>
+				<h2 class="title-app-default">
+					{{ 'COURSES' | translate }}
+				</h2>
+
+				<!--LISTCOURSE-->
+				<ion-list class="cont-gen-list">
+					<ion-item class="cont-item-list-app">
+						<ion-card class="cont-course-detail" *ngFor="let item of items">
+							<ion-card-header detail-none (click)="expandItem(item)" ion-item class="cont-course-header">
+								<p class="title-name-course">{{ 'NAME_COURSE' | translate}}</p>
+								<p class="text-name-course">{{item.NameCourse}}</p>
+								<ion-icon rigth name="arrow-down" class="icon-arrow-acor"></ion-icon>
+							</ion-card-header>
+							<ion-card-content class="cont-course-info">
+								<acordeon [expandHeight]="itemExpandHeight" [expanded]="item.expanded">
+									<div class="detail-info-list">
+										<ion-avatar class="icon-info-course">
+											<ion-icon name="alarm"></ion-icon>
+										</ion-avatar>
+										<p class="title-detail-info">{{ 'DURATION' | translate}}: </p>
+										<p class="text-detail-info">123</p>
+									</div>
+									<div class="clear"></div>
+									<div class="detail-info-list">
+										<ion-avatar class="icon-info-course">
+											<ion-icon name="copy"></ion-icon>
+										</ion-avatar>
+										<p class="title-detail-info">{{ 'DESCRIPTION' | translate}}: </p>
+										<p class="text-detail-info-descrip">xxxxx</p>
+									</div>
+									<div class="clear"></div>
+									<div class="detail-info-list">
+										<ion-avatar class="icon-info-course">
+											<ion-icon name="bookmark"></ion-icon>
+										</ion-avatar>
+										<p class="title-detail-info">{{ 'INSTITUTION' | translate}}:</p>
+										<p class="text-detail-info">xxxx</p>
+									</div>
+									<div>
+										<button ion-button color="dark" outline round class="btn-default-outline" (tap)="openPageIni(PageMateriaPage,item.CourseId,item.TypeCourseId)">
+											{{ 'VIEW_SUBJECTS' | translate}}
+										</button>
+									</div>
+									<div text-right>
+										<button ion-button clear color="primary" class="icon-btn-options">
+											<ion-icon name="create"></ion-icon>
+										</button>
+										<button ion-button clear color="red" class="icon-btn-options">
+											<ion-icon name="trash"></ion-icon>
+										</button>-
+									</div>
+								</acordeon>
+							</ion-card-content>
+						</ion-card>
+					</ion-item>
+				</ion-list>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<!--OPTIONSEDIT-->
+		<ion-fab bottom left class="cont-btn-edit">
+			<button ion-fab mini color="green" (tap)="openPage(AddCursoPage)">
+				<ion-icon name="add"></ion-icon>
+			</button>
+	  	</ion-fab>
+	
+</ion-content>

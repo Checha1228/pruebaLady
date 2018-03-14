@@ -1,0 +1,19 @@
+page-add-curso {
+
+	.cont-form-add {
+		height: auto;
+		display: inline-block;
+	} 
+	
+	.form-add {
+		width: 100%;
+	}
+
+
+	p.title-check {
+		color: color($colors, primary);
+		font-family: "Lato-Bold";
+		font-size: 1.4rem;
+		margin-top: 10px;
+	}
+}

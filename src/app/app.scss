@@ -1,0 +1,208 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+//
+
+.clear {
+	clear: both;
+}
+
+.cont-gen-list ion-label.label.label-ios {
+	margin: 0 !important;
+}
+
+.cont-course-header {
+	padding: 10px;
+} 
+
+// HEADER
+.cont-genr-header-app {
+	background: map-get($colors, dark);
+} 
+
+.toolbar-background {
+	background: transparent !important;
+}
+
+.back-button-text {
+	display: none;
+}
+
+.cont-logo-header, 
+.cont-gen-text-intro,
+.cont-default-forms,
+.item-inner,
+.cont-item-list-app {
+	padding: 0 !important;
+}
+
+.cont-genr-header-app h1 {
+	margin: 0;
+	text-align: center;
+}
+
+h1.logo-lc-app img {
+	height: 50px;
+}
+
+
+//TEXT DEFAULT
+
+h2.title-app-default {
+	font-family: "Lato-Black";
+	font-size: 2.2rem;
+	line-height: 2.2rem;
+	margin-top: 20px !important;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+p.text-app-default {
+	font-family: "Lato-Light";
+	color: color($colors, textprimary);
+}
+
+//FORMS
+
+.form-add {
+	width: 100%;
+}
+
+.cont-default-forms {
+	height: 60px;
+}
+
+.style-default-label {
+	color: color($colors, textseconda);
+	font-family: "Lato-Light";
+	font-size: 1.6rem;
+	margin-top: 10px;
+}
+
+.style-default-label-input {
+	color: color($colors, textseconda);
+	font-family: "Lato-Light";
+	font-size: 1.6rem;
+	margin-top: 4px;
+}
+
+.style-default-input {
+	border-bottom: 1px solid #ccc;
+	color: color($colors, textseconda);
+	font-family: "Lato-Light";
+	font-size: 1.4rem;
+	padding: 0 0 6px !important;
+}
+
+.style-default-input ::placeholder {
+	color: color($colors, primary);
+	font-family: "Lato-Bold";
+	font-size: 1.4rem;
+}
+
+.input-has-focus .style-default-label,
+.input-has-value .style-default-label,
+.input-has-focus .style-default-label-input,
+.input-has-value .style-default-label-input  {
+	color: color($colors, primary) !important;
+	font-family: "Lato-Bold";
+}
+
+.alert-title {
+	color: color($colors, primary) !important;
+}
+
+.select-icon .select-icon-inner {
+	left: 0 !important;
+}
+
+.cont-default-check {
+	float: left;
+	height: 30px;
+	margin-bottom: 10px;
+	min-height: 30px;
+	padding: 0;
+	width: 50%;
+}
+
+textarea.text-input {
+	margin-left: 0 !important;
+}
+
+.cont-list-check {
+	border: 0;
+}
+
+.btn-default-app {
+	font-family: "Lato-Bold";
+	letter-spacing: 0.4rem;
+	margin: 20px 0 0 5%;
+	text-transform: uppercase;
+	width: 90%;
+}
+
+.btn-default-outline {
+	font-family: "Lato-Bold";
+	letter-spacing: 0.4rem;
+	margin: 0 5% 10px;
+	text-transform: uppercase;
+	width: 90%;
+}
+
+//LIST
+
+.cont-gen-list {
+	margin-top: 20px;
+}
+
+.cont-item-list-app .label.label-md {
+	margin: 0;
+}
+
+.cont-course-detail {
+	border-radius: 10px !important;
+	margin: 2px 2px 20px 2px;
+    box-shadow: 0px 0px 2px #ccc !important;
+    width: 99%;
+}
+
+.cont-card-forms {
+	padding: 10px 14px 14px;
+}
+
+.list-ios > .item-block:first-child,
+.list-ios > .item-block:last-child {
+	border: 0;
+}
+
+
+// DESKTOP
+
+@media (max-width: 1920px) and (min-width: 1200px) {
+	.cont-gen-text-intro,
+	.cont-gen-list-course,
+	.form-add,
+	ion-navbar {
+		max-width: 40%;
+		margin: 0 auto;
+	}
+
+	.cont-btn-edit {
+		left: 48% !important;
+	}
+}
+

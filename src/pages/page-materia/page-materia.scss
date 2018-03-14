@@ -1,0 +1,71 @@
+page-page-materia {
+	.title-name-course {
+		color: color($colors, textprimary);
+		font-family: "Lato-Bold";
+		font-size: 1.2rem;
+		margin: 0;
+		width: 90%;
+	}
+
+	.text-name-course {
+		color: color($colors, primary);
+		font-family: "Lato-Light";
+		width: 90%;
+	}
+
+	.icon-arrow-acor {
+		float: right;
+		margin-top: -30px;
+	}
+	
+	//DETALLE
+
+	.cont-course-info {
+		padding: 0 12px;
+	}
+
+	.detail-info-list {
+		display: inline-block;
+		height: auto;
+		margin-bottom: 10px;
+	}
+
+	.detail-info-list:last-child {
+		margin-bottom: 0px;
+	}
+
+	.icon-info-course {
+		float: left;
+		font-size: 2rem;
+		min-height: 26px;
+		min-width: 26px;
+	}
+
+	.title-detail-info {
+		color: color($colors, textprimary);
+		float: left;
+		font-family: "Lato-Bold";
+		margin-right: 2px;
+	}
+	
+	.text-detail-info {
+		color: color($colors, textseconda);
+		float: left;
+		font-family: "Lato-Light";
+	}
+
+	.text-detail-info-descrip {
+		clear: both;
+		color: color($colors, textseconda);
+		font-family: "Lato-Light";
+		margin: 0 0 0 26px;
+		width: %;
+	}
+
+	.icon-btn-options {
+		font-size: 2rem;
+		height: 20px;
+		margin-bottom: 12px;
+		padding: 0 4px;
+	}
+}

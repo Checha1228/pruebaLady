@@ -1,0 +1,79 @@
+<!--HEADER-->
+<ion-header class="cont-genr-header-app">
+ 	<header></header>
+</ion-header>
+
+<!--CONTENIDO-->
+<ion-content>
+	<ion-grid padding class="cont-gen-app-test">
+		<ion-row>
+			<!--TEXTINTRO-->
+			<ion-col col-12 class="cont-gen-text-intro">
+				<h2 class="title-app-default">
+					{{ 'ADD_TITLE' | translate}}<br>
+					{{ 'SUBJECT' | translate}}
+				</h2>
+				<p class="text-app-default">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam in, dolore accusantium omnis odio accusamus consequuntur excepturi aliquam quidem, unde eaque maiores. Harum facilis unde, consectetur quidem ab corporis eaque nisi recusandae explicabo porro quo nostrum quas sed? Maiores pariatur expedita officiis.
+				</p>
+			</ion-col>
+		</ion-row>
+		<!--FORM-->
+		<ion-row>
+			<form action="" class="form-add">
+				<ion-col col-12 class="cont-form-add">
+					<ion-card class="cont-course-detail">
+						<ion-card-content class="cont-card-forms">	
+							<ion-item class="cont-default-forms">
+								<ion-label floating class="style-default-label-input">
+									{{'NAME_OF_SUBJECT' | translate}}
+								</ion-label>
+								<ion-input class="style-default-input"></ion-input>
+							</ion-item>
+							<ion-item class="cont-default-forms">
+								<ion-label floating class="style-default-label">
+									{{'COURSE' | translate}}
+								</ion-label>
+								<ion-select class="style-default-input">
+			                        <ion-option value="CC" >Cédula de Ciudadania</ion-option>
+			                    </ion-select>
+							</ion-item>
+							<ion-item class="cont-default-forms">
+								<ion-label floating class="style-default-label">
+									{{'INSTITUTION' | translate}}
+								</ion-label>
+								<ion-select class="style-default-input">
+			                        <ion-option value="CC" >Cédula de Ciudadania</ion-option>
+			                    </ion-select>
+							</ion-item>
+							<ion-item class="cont-default-forms">
+								<ion-label floating class="style-default-label-input">
+									{{'DURATION' | translate}}
+								</ion-label>
+								<ion-input class="style-default-input"></ion-input>
+							</ion-item>
+							<ion-item class="cont-default-forms">
+								<ion-textarea placeholder="{{'DESCRIPTION' | translate}}" class="style-default-input"></ion-textarea>
+							</ion-item>
+							<ion-item class="cont-default-forms">
+								<ion-label floating class="style-default-label-input">
+									{{'CREDITS' | translate}}
+								</ion-label>
+								<ion-input class="style-default-input"></ion-input>
+							</ion-item>
+							
+							<div class="clear"></div>
+						</ion-card-content>
+					</ion-card>
+					
+
+					<button ion-button round color="primary" type="submit" class="btn-default-app">
+						{{'ADD_SUBJECT' | translate}}
+					</button>
+				
+				</ion-col>
+			</form>
+		</ion-row>
+	</ion-grid>
+
+</ion-content>
